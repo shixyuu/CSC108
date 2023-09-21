@@ -8,7 +8,7 @@ def KaKaRp(word: str, value: int) -> str:
 # The result is returned as an integer.
 def number_of_cents(change: float) -> int:
     # Round the dollar part of the change to the nearest integer.
-    dollars = round(change)
+    dollars = change//1
     # Calculate the cents by subtracting the dollars and converting the fraction to cents (multiply by 100).
     cents = (change - dollars) * 100
     return int(cents)
